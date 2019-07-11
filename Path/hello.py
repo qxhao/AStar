@@ -1,7 +1,12 @@
-import sys
+class test:
+    def __init__(self, x = 0, y = 0):
+        self.x = x
+        self.y = y
+        self.z = self.x + self.y
 
 if __name__ == "__main__":
-    for i in range(0, len(sys.argv), 1):
-        print("参数%d:" % i, sys.argv[i], sep=' ')
-    print("hello.")
-    sys.exit(0)
+    a = test(4, 8)
+    print(a.x, a.y, a.z)
+    a.x = 6
+    print(a.z)
+
